@@ -14,7 +14,7 @@ public class P05DisplayBinary {
     private static void toBinaryString(int i) {
         char[] buffer = new char[32];
         int b_index = 32;
-
+        /* 可以使用 Integer.toBinaryString(int i) 实现*/
         do {  // 完成int数值到二进制符号的转换
             buffer[--b_index] = ((i & 0x01) == 0) ? '0' : '1';  // --b_index 先计算值, 此处要倒序着填充
             i >>>= 1;

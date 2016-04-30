@@ -1,4 +1,6 @@
-package practice02; /**
+package practice02;
+
+/**
  * Created by xuweiman on 16/4/27.
  * 第二章练习6
  */
