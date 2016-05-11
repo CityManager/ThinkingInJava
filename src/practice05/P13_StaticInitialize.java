@@ -2,7 +2,7 @@ package practice05;
 
 /**
  * Created by xuweiman on 16/5/3.
- * 静态对象可以直接视为类的成员(相对于对象的成员,在python中的说法),
+ * 静态对象可以直接视为类的成员(相对于对类的属性,在python中的说法),
  * 首次通过类对其进行访问 或者 首个类对象实例创建时,
  * 静态对象会被初始化
  */
@@ -17,7 +17,7 @@ public class P13_StaticInitialize {
 }
 
 class Cup {
-    int marker;
+    private int marker;
 
     Cup(int marker) {
         this.marker = marker;
@@ -31,13 +31,13 @@ class Cup {
 
 class Cups {
     static Cup cup1;
-    static Cup cup2;
+    private static Cup cup2;
     static {
         cup1 = new Cup(1);
         cup2 = new Cup(2);
     }
 
-    Cup cup3;
+    private Cup cup3;
     {
         cup3 = new Cup(3);  // 每次创建实例时,cup3都会被初始化,不像静态对象(只被初始化一次)
     }
