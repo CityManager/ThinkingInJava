@@ -34,7 +34,7 @@ public class P08_ConnectionManager {
     }
 }
 
-class Connection {
+class Connection {  // Connection 类是报访问权限
     private int id;  // 私有域(属性)
 
     public Connection(int id) {  // 即使设置为 公开访问权限,因为类是包访问权限的而无法再包外被访问.
