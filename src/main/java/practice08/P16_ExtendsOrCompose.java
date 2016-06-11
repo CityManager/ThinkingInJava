@@ -5,6 +5,7 @@ import java.util.Random;
 /**
  * Created by xuweiman on 16/6/2.
  * 使用继承和组合
+ * 继承的一个使用的方式是策略,即各个子类表示同一类型事件不同的策略实现
  */
 public class P16_ExtendsOrCompose {
     public static void main(String... args) {
